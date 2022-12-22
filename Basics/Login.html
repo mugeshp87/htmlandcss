@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    <style>
+            body
+            {
+              background-image:url("black-friday-elements-assortment.jpg");
+              background-size:contain;
+              background-repeat: no-repeat;
+                background-position:top;
+                background-attachment:scroll;
+            
+            }
+        
+        input:valid{
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: blueviolet;
+        }
+        input:invalid{
+            border: 2px solid red;
+        }
+        h1{
+            writing-mode:vertical-rl;
+        }
+    </style>
+    </head>
+    <body>
+        <article>
+        <h1 contenteditable="true">LOGIN FORM</h1>
+        <label for="log">Username</label>
+        <input type="text" id="log" name="log1" maxlength="5" pattern="[a-z]{4,8}"><br>
+        <label for="Pass">Password</label>
+        <input type="password" id="Pass" name="pass1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <input type="submit" value="submit">
+            </article>
+    
+    </body>
+</html>

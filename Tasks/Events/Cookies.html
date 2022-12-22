@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-compatible" content="ie=edge" />
+    <title>Cookies</title>
+  </head>
+  <body>
+    <button id="CreateCookie">Create Cookie</button>
+
+    <script>
+      const CreateCookie = document.getElementById("CreateCookie");
+      CreateCookie.addEventListener(
+        "click",
+        (e) => (document.cookie = "example=mugesh")
+      );
+    </script>
+  </body>
+</html>

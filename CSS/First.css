@@ -1,0 +1,48 @@
+.one{
+   font-size:larger;
+  transform: rotate(0.8turn);
+}
+body {
+    background-color: pink;
+  }
+  
+  @media (min-width: 30em) {
+    body {
+      background-color: blue;
+    }
+  }
+  h1 ~ p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+    display:box
+    }
+    html {
+      font-family: helvetica, arial, sans-serif;
+      letter-spacing: 1px;
+      padding-top: 10px;
+    }
+    
+    article {
+      background-color: red;
+    }
+    
+    article span {
+      background-color: black;
+      color: white;
+      margin: 1px;
+    }
+    
+    article,
+    span {
+      padding: 10px;
+      border-radius: 7px;
+    }
+    
+    article,
+    div {
+      margin: 20px;
+    }
+
+

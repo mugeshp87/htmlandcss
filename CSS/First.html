@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="First.css">
+</head>
+<body>
+    <h1 class="one">AMAZON</h1>
+    <h1 class="two">HELLO TEAM</h1>
+<hr style="color:black,">
+    <p>
+        Let's use:
+        <span>Cascading</span>
+        <span>Style</span>
+        <span>Sheets</span>
+      </p>
+      <article>
+        <h1>A heading</h1>
+        <p>I am a paragraph.</p>
+        <div>I am a div</div>
+        <p>I am another paragraph.</p>
+    </article>
+    <article class="container">
+        <span>First</span>
+        <span>Second</span>
+        <span>Third</span>
+      </article>
+      
+      <article class="container">
+        <span>First</span>
+        <span>Second</span>
+        <span>Third</span>
+      </article>
+      
+      <div>
+        <label for="display">Choose a display value:</label>
+        <select id="display">
+          <option selected>block</option>
+          <option>inline</option>
+          <option>inline-block</option>
+          <option>none</option>
+          <option>flex</option>
+          <option>inline-flex</option>
+          <option>grid</option>
+          <option>inline-grid</option>
+          <option>table</option>
+          <option>list-item</option>
+        </select>
+      </div>    
+</body>
+<script>const articles = document.querySelectorAll('.container');
+    const select = document.querySelector('select');
+    
+    function updateDisplay() {
+      articles.forEach((article) => {
+        article.style.display = select.value;
+      });
+    }
+    
+    select.addEventListener('change', updateDisplay);
+    
+    updateDisplay();</script>
+</html>
